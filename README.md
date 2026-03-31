@@ -82,44 +82,24 @@
 ![Meta](https://img.shields.io/badge/Meta-%230467DF.svg?style=for-the-badge&logo=Meta&logoColor=white)
 
 ---
-
 ## 📊 GitHub Stats
 
 <div align="center">
 
-![Merzi's GitHub Stats](https://github-readme-stats.vercel.app/api?username=derbassimeriem&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true)
-
-![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=derbassimeriem&theme=tokyonight&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=derbassimeriem&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
-
+<img height="158em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=derbassimeriem&theme=tokyonight"/>
+<br/>
+<img height="158em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=derbassimeriem&theme=tokyonight"/>
+<img height="158em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=derbassimeriem&theme=tokyonight"/>
+<img height="158em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=derbassimeriem&theme=tokyonight"/>
+<img height="158em" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=derbassimeriem&theme=tokyonight&utcOffset=1"/>
+<br/>
 </div>
-
----
 
 ## ✍️ My Motto
 
 <div align="center">
 
 > *"I don't just write code; I craft experiences, build communities, and turn data into strategy.*
-> — **Merzi** · Developer × Strategist × Creator
-
-</div>
-
----
-
-## 🔝 Top Contributed Repos
-
-<div align="center">
-
-![Top Repos](https://github-contributor-stats.vercel.app/api?username=derbassimeriem&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
-
-</div>
-
----
-
-<div align="center">
-
-[![Visit Count](https://visitcount.itsvg.in/api?id=derbassimeriem&icon=5&color=6)](https://visitcount.itsvg.in)
+> **Merzi** · Developer × Strategist × Creator
 
 </div>
