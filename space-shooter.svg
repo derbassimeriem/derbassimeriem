@@ -1,113 +1,79 @@
-<svg width="100%" viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg">
-<defs>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @keyframes star1{0%{opacity:0.2}50%{opacity:1}100%{opacity:0.2}}
-    @keyframes star2{0%{opacity:1}50%{opacity:0.1}100%{opacity:1}}
-    @keyframes floatShip{0%{transform:translateY(0px)}50%{transform:translateY(-6px)}100%{transform:translateY(0px)}}
-    @keyframes bullet1{0%{transform:translateX(0);opacity:1}100%{transform:translateX(320px);opacity:0}}
-    @keyframes bullet2{0%{transform:translateX(0);opacity:1}100%{transform:translateX(280px);opacity:0}}
-    @keyframes bullet3{0%{transform:translateX(0);opacity:1}100%{transform:translateX(300px);opacity:0}}
-    @keyframes explode1{0%{r:0;opacity:1}100%{r:18;opacity:0}}
-    @keyframes explode2{0%{r:0;opacity:1}100%{r:14;opacity:0}}
-    @keyframes explode3{0%{r:0;opacity:1}100%{r:16;opacity:0}}
-    @keyframes floatEnemy{0%{transform:translateY(0)}50%{transform:translateY(5px)}100%{transform:translateY(0)}}
-    @keyframes thruster{0%{opacity:0.6;transform:scaleX(1)}50%{opacity:1;transform:scaleX(1.3)}100%{opacity:0.6;transform:scaleX(1)}}
-    .s1{animation:star1 2.1s ease-in-out infinite}
-    .s2{animation:star2 1.7s ease-in-out infinite}
-    .s3{animation:star1 3s ease-in-out infinite 0.5s}
-    .s4{animation:star2 2.4s ease-in-out infinite 1s}
-    .ship{animation:floatShip 3s ease-in-out infinite}
-    .b1{animation:bullet1 1.8s linear infinite}
-    .b2{animation:bullet2 1.8s linear infinite 0.6s}
-    .b3{animation:bullet3 1.8s linear infinite 1.2s}
-    .ex1{animation:explode1 1.8s ease-out infinite}
-    .ex2{animation:explode2 1.8s ease-out infinite 0.6s}
-    .ex3{animation:explode3 1.8s ease-out infinite 1.2s}
-    .enemy{animation:floatEnemy 2.5s ease-in-out infinite}
-    .thrust{animation:thruster 0.4s ease-in-out infinite;transform-origin:68px 110px}
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes blink {
+      0%, 90%, 100% { ry: 8; }
+      95% { ry: 2; }
+    }
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(0deg); transform-origin: 280px 200px; }
+      50% { transform: rotate(15deg); transform-origin: 280px 200px; }
+    }
+    @keyframes earTwitch {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-8deg); }
+    }
+    
+    .body { fill: #FFB6C1; stroke: #FF69B4; stroke-width: 2; }
+    .ear { fill: #FF9FAA; stroke: #FF69B4; stroke-width: 1.5; }
+    .eye { fill: white; stroke: #8B4513; stroke-width: 1; }
+    .pupil { fill: #2C1810; }
+    .nose { fill: #FF69B4; }
+    .cheek { fill: #FFB7C5; opacity: 0.6; }
+    .heart { fill: #FF3366; animation: bounce 0.6s ease-in-out infinite; }
+    
+    .click-area:hover .heart-group {
+      animation: bounce 0.3s ease-in-out;
+    }
+    
+    .click-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #FF69B4; }
   </style>
-</defs>
-
-<rect width="680" height="220" fill="#1a0a2e" rx="12"/>
-
-<circle class="s1" cx="30" cy="18" r="1.2" fill="#ED93B1"/>
-<circle class="s2" cx="120" cy="40" r="1" fill="#AFA9EC"/>
-<circle class="s3" cx="200" cy="12" r="1.5" fill="#F4C0D1"/>
-<circle class="s1" cx="310" cy="30" r="1" fill="#ED93B1"/>
-<circle class="s4" cx="400" cy="18" r="1.2" fill="#AFA9EC"/>
-<circle class="s2" cx="480" cy="42" r="1" fill="#F4C0D1"/>
-<circle class="s3" cx="560" cy="15" r="1.5" fill="#ED93B1"/>
-<circle class="s1" cx="630" cy="35" r="1" fill="#AFA9EC"/>
-<circle class="s4" cx="70" cy="55" r="0.8" fill="#F4C0D1"/>
-<circle class="s2" cx="160" cy="70" r="1" fill="#ED93B1"/>
-<circle class="s1" cx="260" cy="60" r="0.8" fill="#AFA9EC"/>
-<circle class="s3" cx="350" cy="75" r="1" fill="#F4C0D1"/>
-<circle class="s4" cx="450" cy="58" r="0.8" fill="#ED93B1"/>
-<circle class="s2" cx="540" cy="68" r="1" fill="#AFA9EC"/>
-<circle class="s1" cx="610" cy="55" r="0.8" fill="#F4C0D1"/>
-<circle class="s3" cx="660" cy="80" r="1" fill="#ED93B1"/>
-<circle class="s2" cx="50" cy="170" r="0.8" fill="#AFA9EC"/>
-<circle class="s4" cx="140" cy="185" r="1" fill="#F4C0D1"/>
-<circle class="s1" cx="590" cy="175" r="0.8" fill="#ED93B1"/>
-<circle class="s3" cx="650" cy="160" r="1" fill="#AFA9EC"/>
-
-<g class="ship">
-  <g class="thrust">
-    <ellipse cx="68" cy="110" rx="14" ry="5" fill="#D4537E" opacity="0.8"/>
-    <ellipse cx="62" cy="110" rx="8" ry="3" fill="#FBEAF0" opacity="0.9"/>
+  
+  <g id="pet">
+    <!-- Tail -->
+    <path d="M280 200 L300 190 L295 210 L280 200" fill="#FF9FAA" stroke="#FF69B4" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0;15;0" dur="1.2s" repeatCount="indefinite" additive="sum" from="280 200" to="280 200"/>
+    </path>
+    
+    <!-- Body -->
+    <ellipse cx="200" cy="180" rx="55" ry="45" class="body"/>
+    
+    <!-- Ears -->
+    <path d="M155 140 L135 100 L165 120 Z" class="ear">
+      <animateTransform attributeName="transform" type="rotate" values="-5;0;-5" dur="1.5s" repeatCount="indefinite" additive="sum" from="150 120" to="150 120"/>
+    </path>
+    <path d="M245 140 L265 100 L235 120 Z" class="ear">
+      <animateTransform attributeName="transform" type="rotate" values="5;0;5" dur="1.5s" repeatCount="indefinite" additive="sum" from="250 120" to="250 120"/>
+    </path>
+    
+    <!-- Face -->
+    <ellipse cx="170" cy="170" rx="8" ry="10" class="eye">
+      <animate attributeName="ry" values="10;2;10" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="230" cy="170" rx="8" ry="10" class="eye">
+      <animate attributeName="ry" values="10;2;10" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="170" cy="172" r="4" class="pupil"/>
+    <circle cx="230" cy="172" r="4" class="pupil"/>
+    
+    <!-- Nose -->
+    <ellipse cx="200" cy="190" rx="8" ry="6" class="nose"/>
+    
+    <!-- Cheeks -->
+    <circle cx="150" cy="195" r="10" class="cheek"/>
+    <circle cx="250" cy="195" r="10" class="cheek"/>
+    
+    <!-- Floating Heart -->
+    <g class="heart-group">
+      <path d="M200 130 L195 125 C185 115 185 100 200 105 C215 100 215 115 205 125 L200 130Z" class="heart" transform="translate(0,0)">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </path>
+    </g>
   </g>
-  <polygon points="120,110 80,90 75,110 80,130" fill="#7F77DD"/>
-  <polygon points="115,110 82,94 78,110 82,126" fill="#AFA9EC"/>
-  <polygon points="80,96 70,88 72,96" fill="#534AB7"/>
-  <polygon points="80,124 70,132 72,124" fill="#534AB7"/>
-  <ellipse cx="105" cy="110" rx="8" ry="6" fill="#EEEDFE" opacity="0.9"/>
-  <ellipse cx="105" cy="110" rx="5" ry="4" fill="#AFA9EC" opacity="0.6"/>
-  <rect x="88" y="107" width="4" height="6" rx="1" fill="#D4537E"/>
-</g>
-
-<g class="enemy" style="transform:translateX(390px) translateY(85px)">
-  <polygon points="0,-18 16,8 0,2 -16,8" fill="#ED93B1"/>
-  <polygon points="0,-12 10,4 0,0 -10,4" fill="#FBEAF0" opacity="0.7"/>
-  <circle cx="0" cy="-2" r="5" fill="#4B1528"/>
-  <circle cx="0" cy="-2" r="3" fill="#D4537E" opacity="0.8"/>
-  <polygon points="-18,6 -28,14 -16,10" fill="#F4C0D1" opacity="0.7"/>
-  <polygon points="18,6 28,14 16,10" fill="#F4C0D1" opacity="0.7"/>
-</g>
-
-<g class="enemy" style="transform:translateX(460px) translateY(50px)">
-  <polygon points="0,-18 16,8 0,2 -16,8" fill="#ED93B1" opacity="0.85"/>
-  <polygon points="0,-12 10,4 0,0 -10,4" fill="#FBEAF0" opacity="0.6"/>
-  <circle cx="0" cy="-2" r="5" fill="#4B1528"/>
-  <circle cx="0" cy="-2" r="3" fill="#D4537E" opacity="0.8"/>
-  <polygon points="-18,6 -28,14 -16,10" fill="#F4C0D1" opacity="0.6"/>
-  <polygon points="18,6 28,14 16,10" fill="#F4C0D1" opacity="0.6"/>
-</g>
-
-<g class="enemy" style="transform:translateX(430px) translateY(130px)">
-  <polygon points="0,-18 16,8 0,2 -16,8" fill="#ED93B1" opacity="0.75"/>
-  <polygon points="0,-12 10,4 0,0 -10,4" fill="#FBEAF0" opacity="0.5"/>
-  <circle cx="0" cy="-2" r="5" fill="#4B1528"/>
-  <circle cx="0" cy="-2" r="3" fill="#D4537E" opacity="0.7"/>
-</g>
-
-<g class="b1">
-  <rect x="122" y="108" width="18" height="3" rx="1.5" fill="#F4C0D1"/>
-  <rect x="122" y="108" width="6" height="3" rx="1.5" fill="#FBEAF0"/>
-</g>
-<g class="b2">
-  <rect x="122" y="108" width="18" height="3" rx="1.5" fill="#AFA9EC"/>
-  <rect x="122" y="108" width="6" height="3" rx="1.5" fill="#EEEDFE"/>
-</g>
-<g class="b3">
-  <rect x="122" y="108" width="18" height="3" rx="1.5" fill="#F4C0D1"/>
-  <rect x="122" y="108" width="6" height="3" rx="1.5" fill="#FBEAF0"/>
-</g>
-
-<circle class="ex1" cx="390" cy="110" r="0" fill="none" stroke="#ED93B1" stroke-width="2" opacity="0"/>
-<circle class="ex2" cx="460" cy="68" r="0" fill="none" stroke="#AFA9EC" stroke-width="2" opacity="0"/>
-<circle class="ex3" cx="430" cy="148" r="0" fill="none" stroke="#F4C0D1" stroke-width="2" opacity="0"/>
-
-<text font-family="monospace" font-size="11px" x="40" y="200" fill="#7F77DD" opacity="0.9">[ merzi.exe ]</text>
-<text font-family="monospace" font-size="11px" x="220" y="200" fill="#ED93B1" opacity="0.8">shooting bugs · building worlds · crafting code</text>
-<text font-family="monospace" font-size="11px" x="590" y="200" fill="#AFA9EC" opacity="0.7">lvl 2 up</text>
+  
+  <text x="200" y="280" text-anchor="middle" class="click-text">🐾 click me! 🐾</text>
 </svg>
