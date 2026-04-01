@@ -45,7 +45,7 @@
 
 <!--the rocket Game -->
 <div align="center">
-  <img src="./assets/space-shooter.svg" alt="Space shooter" width="100%"/>
+  <img src="./space-shooter.svg" alt="Space shooter" width="100%"/>
 </div>
 
 ---
