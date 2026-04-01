@@ -1,79 +1,210 @@
-<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+<defs>
   <style>
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
-    @keyframes blink {
-      0%, 90%, 100% { ry: 8; }
-      95% { ry: 2; }
-    }
-    @keyframes tailWag {
-      0%, 100% { transform: rotate(0deg); transform-origin: 280px 200px; }
-      50% { transform: rotate(15deg); transform-origin: 280px 200px; }
-    }
-    @keyframes earTwitch {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(-8deg); }
-    }
-    
-    .body { fill: #FFB6C1; stroke: #FF69B4; stroke-width: 2; }
-    .ear { fill: #FF9FAA; stroke: #FF69B4; stroke-width: 1.5; }
-    .eye { fill: white; stroke: #8B4513; stroke-width: 1; }
-    .pupil { fill: #2C1810; }
-    .nose { fill: #FF69B4; }
-    .cheek { fill: #FFB7C5; opacity: 0.6; }
-    .heart { fill: #FF3366; animation: bounce 0.6s ease-in-out infinite; }
-    
-    .click-area:hover .heart-group {
-      animation: bounce 0.3s ease-in-out;
-    }
-    
-    .click-text { font-family: 'Courier New', monospace; font-size: 14px; fill: #FF69B4; }
+    @keyframes tk1{0%,100%{opacity:.1}50%{opacity:1}}
+    @keyframes tk2{0%,100%{opacity:.9}50%{opacity:.05}}
+    @keyframes tk3{0%,100%{opacity:.3}60%{opacity:.95}}
+    @keyframes shipBob{0%,100%{transform:translateY(0px)}50%{transform:translateY(-8px)}}
+    @keyframes fl{0%,100%{rx:18;opacity:.65}50%{rx:26;opacity:1}}
+    @keyframes fli{0%,100%{rx:10;opacity:.8}50%{rx:15;opacity:1}}
+    @keyframes b1{0%{transform:translateX(0px);opacity:1}100%{transform:translateX(560px);opacity:0}}
+    @keyframes b2{0%{transform:translateX(0px);opacity:1}100%{transform:translateX(520px);opacity:0}}
+    @keyframes b3{0%{transform:translateX(0px);opacity:1}100%{transform:translateX(540px);opacity:0}}
+    @keyframes b4{0%{transform:translateX(0px);opacity:1}100%{transform:translateX(510px);opacity:0}}
+    @keyframes eA{0%,100%{transform:translateX(440px) translateY(68px)}33%{transform:translateX(438px) translateY(58px)}66%{transform:translateX(442px) translateY(75px)}}
+    @keyframes eB{0%,100%{transform:translateX(520px) translateY(130px)}50%{transform:translateX(518px) translateY(142px)}}
+    @keyframes eC{0%,100%{transform:translateX(480px) translateY(185px)}40%{transform:translateX(482px) translateY(176px)}}
+    @keyframes eD{0%,100%{transform:translateX(580px) translateY(95px)}50%{transform:translateX(578px) translateY(104px)}}
+    @keyframes eE{0%,100%{transform:translateX(560px) translateY(170px)}33%{transform:translateX(562px) translateY(160px)}}
+    @keyframes ex1a{0%{r:0;opacity:1}100%{r:26;opacity:0}}
+    @keyframes ex1b{0%{r:0;opacity:.8}100%{r:18;opacity:0}}
+    @keyframes ex2a{0%{r:0;opacity:1}100%{r:20;opacity:0}}
+    @keyframes ex2b{0%{r:0;opacity:.8}100%{r:13;opacity:0}}
+    @keyframes ex3a{0%{r:0;opacity:1}100%{r:22;opacity:0}}
+    @keyframes ex4a{0%{r:0;opacity:1}100%{r:16;opacity:0}}
+    @keyframes pl{0%,100%{opacity:.55}50%{opacity:.85}}
+    @keyframes rot{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+    @keyframes rotR{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}
+    @keyframes hud{0%,100%{opacity:.6}50%{opacity:1}}
+    @keyframes scan{0%{transform:translateY(-260px)}100%{transform:translateY(260px)}}
+    @keyframes px1{0%{transform:translate(0,0);opacity:1}100%{transform:translate(18px,-22px);opacity:0}}
+    @keyframes px2{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-15px,-18px);opacity:0}}
+    @keyframes px3{0%{transform:translate(0,0);opacity:1}100%{transform:translate(20px,15px);opacity:0}}
+    @keyframes px4{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-18px,20px);opacity:0}}
+    @keyframes px5{0%{transform:translate(0,0);opacity:1}100%{transform:translate(12px,-25px);opacity:0}}
+    @keyframes px6{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-22px,10px);opacity:0}}
+    @keyframes px7{0%{transform:translate(0,0);opacity:1}100%{transform:translate(25px,8px);opacity:0}}
+    @keyframes px8{0%{transform:translate(0,0);opacity:1}100%{transform:translate(8px,24px);opacity:0}}
+    .t1{animation:tk1 2.1s ease-in-out infinite}
+    .t2{animation:tk2 1.7s ease-in-out infinite}
+    .t3{animation:tk3 3s ease-in-out infinite .5s}
+    .t4{animation:tk1 2.6s ease-in-out infinite 1s}
+    .t5{animation:tk2 1.4s ease-in-out infinite .3s}
+    .t6{animation:tk3 2.9s ease-in-out infinite .8s}
+    .ship{animation:shipBob 3.2s ease-in-out infinite}
+    .flame{animation:fl .3s ease-in-out infinite}
+    .flamei{animation:fli .3s ease-in-out infinite}
+    .bl1{animation:b1 1.5s linear infinite}
+    .bl2{animation:b2 1.5s linear infinite .38s}
+    .bl3{animation:b3 1.5s linear infinite .76s}
+    .bl4{animation:b4 1.5s linear infinite 1.14s}
+    .enemyA{animation:eA 3.2s ease-in-out infinite}
+    .enemyB{animation:eB 2.6s ease-in-out infinite .4s}
+    .enemyC{animation:eC 2.9s ease-in-out infinite .9s}
+    .enemyD{animation:eD 3.5s ease-in-out infinite 1.3s}
+    .enemyE{animation:eE 2.4s ease-in-out infinite .6s}
+    .r1a{animation:ex1a 1.5s ease-out infinite}
+    .r1b{animation:ex1b 1.5s ease-out infinite .1s}
+    .r2a{animation:ex2a 1.5s ease-out infinite .38s}
+    .r2b{animation:ex2b 1.5s ease-out infinite .48s}
+    .r3a{animation:ex3a 1.5s ease-out infinite .76s}
+    .r4a{animation:ex4a 1.5s ease-out infinite 1.14s}
+    .planet{animation:pl 4s ease-in-out infinite}
+    .ring1{animation:rot 12s linear infinite;transform-origin:610px 75px}
+    .ring2{animation:rotR 18s linear infinite;transform-origin:610px 75px}
+    .hud{animation:hud 2s ease-in-out infinite}
+    .scanline{animation:scan 4s linear infinite;opacity:.03}
+    .p1{animation:px1 1.5s ease-out infinite}
+    .p2{animation:px2 1.5s ease-out infinite .1s}
+    .p3{animation:px3 1.5s ease-out infinite .05s}
+    .p4{animation:px4 1.5s ease-out infinite .08s}
+    .p5{animation:px5 1.5s ease-out infinite .38s}
+    .p6{animation:px6 1.5s ease-out infinite .48s}
+    .p7{animation:px7 1.5s ease-out infinite .76s}
+    .p8{animation:px8 1.5s ease-out infinite .86s}
   </style>
-  
-  <g id="pet">
-    <!-- Tail -->
-    <path d="M280 200 L300 190 L295 210 L280 200" fill="#FF9FAA" stroke="#FF69B4" stroke-width="1.5">
-      <animateTransform attributeName="transform" type="rotate" values="0;15;0" dur="1.2s" repeatCount="indefinite" additive="sum" from="280 200" to="280 200"/>
-    </path>
-    
-    <!-- Body -->
-    <ellipse cx="200" cy="180" rx="55" ry="45" class="body"/>
-    
-    <!-- Ears -->
-    <path d="M155 140 L135 100 L165 120 Z" class="ear">
-      <animateTransform attributeName="transform" type="rotate" values="-5;0;-5" dur="1.5s" repeatCount="indefinite" additive="sum" from="150 120" to="150 120"/>
-    </path>
-    <path d="M245 140 L265 100 L235 120 Z" class="ear">
-      <animateTransform attributeName="transform" type="rotate" values="5;0;5" dur="1.5s" repeatCount="indefinite" additive="sum" from="250 120" to="250 120"/>
-    </path>
-    
-    <!-- Face -->
-    <ellipse cx="170" cy="170" rx="8" ry="10" class="eye">
-      <animate attributeName="ry" values="10;2;10" dur="3s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="230" cy="170" rx="8" ry="10" class="eye">
-      <animate attributeName="ry" values="10;2;10" dur="3s" repeatCount="indefinite"/>
-    </ellipse>
-    <circle cx="170" cy="172" r="4" class="pupil"/>
-    <circle cx="230" cy="172" r="4" class="pupil"/>
-    
-    <!-- Nose -->
-    <ellipse cx="200" cy="190" rx="8" ry="6" class="nose"/>
-    
-    <!-- Cheeks -->
-    <circle cx="150" cy="195" r="10" class="cheek"/>
-    <circle cx="250" cy="195" r="10" class="cheek"/>
-    
-    <!-- Floating Heart -->
-    <g class="heart-group">
-      <path d="M200 130 L195 125 C185 115 185 100 200 105 C215 100 215 115 205 125 L200 130Z" class="heart" transform="translate(0,0)">
-        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
-      </path>
-    </g>
-  </g>
-  
-  <text x="200" y="280" text-anchor="middle" class="click-text">🐾 click me! 🐾</text>
+</defs>
+<rect width="680" height="260" fill="#0a0415" rx="14"/>
+<rect x="1" y="1" width="678" height="258" fill="none" stroke="#3C3489" stroke-width="1.5" rx="13" opacity="0.6"/>
+<rect class="scanline" x="0" y="0" width="680" height="6" fill="#AFA9EC"/>
+<circle class="t1" cx="22" cy="18" r="1.4" fill="#ED93B1"/>
+<circle class="t2" cx="65" cy="9" r="1" fill="#AFA9EC"/>
+<circle class="t3" cx="108" cy="32" r="1.6" fill="#F4C0D1"/>
+<circle class="t4" cx="155" cy="14" r="1.1" fill="#ED93B1"/>
+<circle class="t5" cx="198" cy="42" r="0.8" fill="#AFA9EC"/>
+<circle class="t6" cx="245" cy="20" r="1.3" fill="#F4C0D1"/>
+<circle class="t1" cx="288" cy="8" r="0.9" fill="#ED93B1"/>
+<circle class="t2" cx="332" cy="36" r="1.5" fill="#AFA9EC"/>
+<circle class="t3" cx="375" cy="16" r="1" fill="#F4C0D1"/>
+<circle class="t4" cx="418" cy="44" r="1.2" fill="#ED93B1"/>
+<circle class="t5" cx="462" cy="22" r="0.8" fill="#AFA9EC"/>
+<circle class="t6" cx="638" cy="28" r="1.1" fill="#F4C0D1"/>
+<circle class="t1" cx="658" cy="12" r="0.9" fill="#ED93B1"/>
+<circle class="t2" cx="42" cy="58" r="1" fill="#AFA9EC"/>
+<circle class="t3" cx="88" cy="72" r="1.3" fill="#F4C0D1"/>
+<circle class="t4" cx="132" cy="55" r="0.8" fill="#ED93B1"/>
+<circle class="t5" cx="178" cy="80" r="1.1" fill="#AFA9EC"/>
+<circle class="t6" cx="222" cy="62" r="1.4" fill="#F4C0D1"/>
+<circle class="t1" cx="265" cy="78" r="0.9" fill="#ED93B1"/>
+<circle class="t2" cx="308" cy="58" r="1" fill="#AFA9EC"/>
+<circle class="t3" cx="352" cy="72" r="1.2" fill="#F4C0D1"/>
+<circle class="t1" cx="28" cy="195" r="1" fill="#AFA9EC"/>
+<circle class="t2" cx="72" cy="215" r="0.8" fill="#F4C0D1"/>
+<circle class="t3" cx="115" cy="200" r="1.1" fill="#ED93B1"/>
+<circle class="t4" cx="628" cy="198" r="1.2" fill="#AFA9EC"/>
+<circle class="t5" cx="658" cy="218" r="0.9" fill="#F4C0D1"/>
+<circle class="t6" cx="645" cy="205" r="0.7" fill="#ED93B1"/>
+<g class="planet">
+  <circle cx="610" cy="75" r="42" fill="#1a0730" opacity="0.9"/>
+  <circle cx="610" cy="75" r="34" fill="#26215C" opacity="0.8"/>
+  <circle cx="610" cy="75" r="22" fill="#3C3489" opacity="0.9"/>
+  <circle cx="610" cy="75" r="13" fill="#534AB7" opacity="0.9"/>
+  <circle cx="604" cy="68" r="5" fill="#7F77DD" opacity="0.4"/>
+</g>
+<g class="ring1"><ellipse cx="610" cy="75" rx="58" ry="11" fill="none" stroke="#7F77DD" stroke-width="2" opacity="0.35"/></g>
+<g class="ring2">
+  <ellipse cx="610" cy="75" rx="68" ry="14" fill="none" stroke="#AFA9EC" stroke-width="1" opacity="0.2"/>
+  <ellipse cx="610" cy="75" rx="50" ry="9" fill="none" stroke="#ED93B1" stroke-width="0.8" opacity="0.2"/>
+</g>
+<circle cx="148" cy="38" r="14" fill="#0d0220" opacity="0.9"/>
+<circle cx="148" cy="38" r="9" fill="#1a0730" opacity="0.9"/>
+<circle cx="144" cy="34" r="3" fill="#26215C" opacity="0.6"/>
+<g class="ship">
+  <ellipse class="flame" cx="52" cy="130" rx="18" ry="6" fill="#D4537E" opacity="0.9"/>
+  <ellipse class="flamei" cx="44" cy="130" rx="10" ry="4" fill="#FBEAF0" opacity="1"/>
+  <polygon points="48,118 40,127 40,133 48,142" fill="#534AB7"/>
+  <polygon points="48,112 36,104 38,116" fill="#3C3489"/>
+  <polygon points="48,148 36,156 38,144" fill="#3C3489"/>
+  <polygon points="138,130 90,104 82,130 90,156" fill="#7F77DD"/>
+  <polygon points="132,130 93,108 86,130 93,152" fill="#AFA9EC"/>
+  <polygon points="90,106 76,96 79,110" fill="#3C3489"/>
+  <polygon points="90,154 76,164 79,150" fill="#3C3489"/>
+  <rect x="96" y="116" width="6" height="28" rx="2" fill="#26215C"/>
+  <rect x="96" y="122" width="6" height="4" rx="1" fill="#3C3489"/>
+  <rect x="96" y="134" width="6" height="4" rx="1" fill="#3C3489"/>
+  <ellipse cx="120" cy="130" rx="13" ry="9" fill="#EEEDFE" opacity="0.98"/>
+  <ellipse cx="120" cy="130" rx="8" ry="6" fill="#7F77DD" opacity="0.75"/>
+  <ellipse cx="120" cy="130" rx="4" ry="3" fill="#26215C" opacity="0.95"/>
+  <rect x="90" y="126" width="8" height="8" rx="2" fill="#ED93B1"/>
+  <rect x="90" y="120" width="4" height="4" rx="1" fill="#F4C0D1" opacity="0.8"/>
+  <rect x="90" y="136" width="4" height="4" rx="1" fill="#F4C0D1" opacity="0.8"/>
+  <rect x="140" y="128" width="10" height="4" rx="2" fill="#AFA9EC" opacity="0.6"/>
+</g>
+<g class="bl1"><rect x="150" y="127" width="26" height="5" rx="2.5" fill="#F4C0D1"/><rect x="150" y="128.5" width="10" height="2" rx="1" fill="#FBEAF0"/></g>
+<g class="bl2"><rect x="150" y="127" width="26" height="5" rx="2.5" fill="#AFA9EC"/><rect x="150" y="128.5" width="10" height="2" rx="1" fill="#EEEDFE"/></g>
+<g class="bl3"><rect x="150" y="127" width="26" height="5" rx="2.5" fill="#ED93B1"/><rect x="150" y="128.5" width="10" height="2" rx="1" fill="#FBEAF0"/></g>
+<g class="bl4"><rect x="150" y="127" width="26" height="5" rx="2.5" fill="#F4C0D1" opacity="0.7"/><rect x="150" y="128.5" width="10" height="2" rx="1" fill="#FBEAF0"/></g>
+<g class="enemyA">
+  <polygon points="0,-24 7,-8 22,-15 13,0 24,9 9,7 11,24 0,13 -11,24 -9,7 -24,9 -13,0 -22,-15 -7,-8" fill="#ED93B1" opacity="0.95"/>
+  <circle cx="0" cy="0" r="9" fill="#4B1528"/>
+  <circle cx="0" cy="0" r="5" fill="#D4537E"/>
+  <circle cx="0" cy="0" r="2.5" fill="#FBEAF0" opacity="0.9"/>
+  <rect x="-18" y="-32" width="36" height="5" rx="2" fill="#D4537E" opacity="0.9"/>
+</g>
+<g class="enemyB">
+  <polygon points="0,-22 18,11 0,5 -18,11" fill="#F4C0D1" opacity="0.95"/>
+  <polygon points="0,-14 11,6 0,2 -11,6" fill="#FBEAF0" opacity="0.65"/>
+  <circle cx="0" cy="3" r="7" fill="#4B1528"/>
+  <circle cx="0" cy="3" r="4" fill="#993556" opacity="0.95"/>
+  <polygon points="-22,9 -36,19 -20,14" fill="#ED93B1" opacity="0.85"/>
+  <polygon points="22,9 36,19 20,14" fill="#ED93B1" opacity="0.85"/>
+  <rect x="-5" y="11" width="10" height="4" rx="2" fill="#D4537E" opacity="0.7"/>
+  <rect x="-15" y="-30" width="30" height="4" rx="2" fill="#993556" opacity="0.9"/>
+</g>
+<g class="enemyC">
+  <polygon points="0,-20 16,10 0,4 -16,10" fill="#AFA9EC" opacity="0.9"/>
+  <polygon points="0,-13 10,6 0,1 -10,6" fill="#EEEDFE" opacity="0.6"/>
+  <circle cx="0" cy="2" r="7" fill="#26215C"/>
+  <circle cx="0" cy="2" r="4" fill="#7F77DD" opacity="0.95"/>
+  <circle cx="0" cy="2" r="2" fill="#EEEDFE" opacity="0.5"/>
+  <polygon points="-22,8 -33,17 -19,13" fill="#AFA9EC" opacity="0.65"/>
+  <polygon points="22,8 33,17 19,13" fill="#AFA9EC" opacity="0.65"/>
+  <rect x="-13" y="-28" width="26" height="4" rx="2" fill="#7F77DD" opacity="0.85"/>
+</g>
+<g class="enemyD">
+  <polygon points="0,-18 14,9 0,3 -14,9" fill="#F4C0D1" opacity="0.8"/>
+  <circle cx="0" cy="2" r="6" fill="#4B1528"/>
+  <circle cx="0" cy="2" r="3.5" fill="#ED93B1" opacity="0.9"/>
+  <polygon points="-16,7 -25,14 -14,11" fill="#F4C0D1" opacity="0.6"/>
+  <polygon points="16,7 25,14 14,11" fill="#F4C0D1" opacity="0.6"/>
+  <rect x="-11" y="-26" width="22" height="4" rx="2" fill="#ED93B1" opacity="0.8"/>
+</g>
+<g class="enemyE">
+  <polygon points="0,-15 11,8 0,3 -11,8" fill="#AFA9EC" opacity="0.75"/>
+  <circle cx="0" cy="1" r="5" fill="#26215C"/>
+  <circle cx="0" cy="1" r="3" fill="#534AB7" opacity="0.9"/>
+  <rect x="-9" y="-22" width="18" height="3" rx="1.5" fill="#534AB7" opacity="0.7"/>
+</g>
+<circle class="r1a" cx="440" cy="68" r="0" fill="none" stroke="#ED93B1" stroke-width="3" opacity="0"/>
+<circle class="r1b" cx="440" cy="68" r="0" fill="none" stroke="#FBEAF0" stroke-width="1.5" opacity="0"/>
+<circle class="p1" cx="440" cy="68" r="3" fill="#F4C0D1" opacity="0"/>
+<circle class="p2" cx="440" cy="68" r="2.5" fill="#EEEDFE" opacity="0"/>
+<circle class="p3" cx="440" cy="68" r="3" fill="#ED93B1" opacity="0"/>
+<circle class="p4" cx="440" cy="68" r="2" fill="#AFA9EC" opacity="0"/>
+<circle class="r2a" cx="520" cy="130" r="0" fill="none" stroke="#AFA9EC" stroke-width="2.5" opacity="0"/>
+<circle class="r2b" cx="520" cy="130" r="0" fill="none" stroke="#EEEDFE" stroke-width="1.2" opacity="0"/>
+<circle class="p5" cx="520" cy="130" r="3" fill="#F4C0D1" opacity="0"/>
+<circle class="p6" cx="520" cy="130" r="2.5" fill="#AFA9EC" opacity="0"/>
+<circle class="r3a" cx="480" cy="185" r="0" fill="none" stroke="#F4C0D1" stroke-width="2.5" opacity="0"/>
+<circle class="p7" cx="480" cy="185" r="3" fill="#ED93B1" opacity="0"/>
+<circle class="r4a" cx="580" cy="95" r="0" fill="none" stroke="#ED93B1" stroke-width="2" opacity="0"/>
+<circle class="p8" cx="580" cy="95" r="2.5" fill="#F4C0D1" opacity="0"/>
+<rect class="hud" x="16" y="228" width="100" height="16" rx="3" fill="none" stroke="#534AB7" stroke-width="0.8"/>
+<rect x="18" y="230" width="80" height="12" rx="2" fill="#26215C" opacity="0.9"/>
+<rect x="18" y="230" width="62" height="12" rx="2" fill="#7F77DD" opacity="0.85"/>
+<text font-family="monospace" font-size="10px" x="20" y="240" fill="#EEEDFE" opacity="0.95">HP ████████</text>
+<text font-family="monospace" font-size="10px" x="128" y="240" fill="#AFA9EC" opacity="0.8">SCORE: 9999</text>
+<text font-family="monospace" font-size="10px" x="248" y="240" fill="#ED93B1" opacity="0.8">WAVE: 07</text>
+<text font-family="monospace" font-size="11px" x="358" y="240" fill="#7F77DD" opacity="0.9">[ merzi.exe ] · shooting bugs · crafting code</text>
+<text font-family="monospace" font-size="10px" x="620" y="240" fill="#AFA9EC" opacity="0.7">LVL 02</text>
 </svg>
