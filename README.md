@@ -3,7 +3,7 @@
 # ✨ Hey there, I'm Meriem Z. Derbassi — AKA Merzi 🌷
 ### 💻 CS Student × Web Developer × Digital Strategist × Content Creator
 
-*Building at the intersection of **Technology** and **Digital Marketing** from Algiers 🇩🇿*
+*Building at the intersection of **Technology** and **Digital Marketing** 📍from Algiers 🇩🇿*
 
 👋 Got a project in mind? Let's build something great together → **derbassimeriemz@live.com** 🌟
 
