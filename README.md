@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✨ Hey there, I'm Meriem Z. Derbassi — AKA Merzi 🌷
+# ✨ Hey there, I'm Meriem Z. Derbassi  AKA Merzi 🌷
 ### 💻 CS Student × Web Developer × Digital Strategist × Content Creator
 
 *Building at the intersection of **Technology** and **Digital Marketing** 📍from Algiers 🇩🇿*
