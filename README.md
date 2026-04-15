@@ -5,7 +5,7 @@
 
 *Building at the intersection of **Technology** and **Digital Marketing** 📍from Algiers 🇩🇿*
 
-👋 Got a project in mind? Let's build something great together → **derbassimeriemz@live.com** 🌟
+👋 Got a project in mind? Let's build something great together → **derbassimeriemz@gmail.com** 🌟
 
 </div>
 
@@ -18,7 +18,7 @@
 - 💬 **Ask me about:** Web Dev · SEO · Digital Strategy · Community Building · Content Creation
 - 🌐 **Languages:** Arabic · English 🇬🇧 · French 🇫🇷 · Spanish (learning) 🇪🇸
 - ⚡ **My motto:** *Where code meets creativity that's where I live.*
-- 🏆 **Fun facts:** FULL Stack developer · Grew a community to **30K+ followers** in 2 months with **10M+ views** · Hackathon participant · Certified Digital Marketer
+- 🏆 **Fun facts:** FULL Stack developer · Grew a community to **30K+ followers** in 2 months with **10M+ views** · Certified Digital Marketer
 
 ## 🧩 Dev Highlights
 
