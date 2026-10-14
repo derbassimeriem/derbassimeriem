@@ -2,7 +2,7 @@
 
 # 👋 Hi
 
-💻 Freelance Full-Stack Developer | Aspiring software engineer | Digital Creator
+ Full-Stack Developer | Aspiring software engineer | Digital Creator
 
 I'm a Computer Science student at USTHB, Algiers, passionate about building modern web applications and creating digital solutions that combine technology, creativity, and functionality.
 
