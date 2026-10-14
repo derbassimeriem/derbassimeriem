@@ -1,36 +1,26 @@
 <div align="center">
 
-# ✨ Hey there, I'm Meriem Z. Derbassi 
-### 💻 CS Student × Web Developer × Digital Strategist × Content Creator
+# 👋 Hi
 
-*Building at the intersection of **Technology** and **Digital Marketing** 📍from Algiers 🇩🇿*
+💻 Freelance Full-Stack Developer | Computer Science Student | Digital Creator
 
-👋 Got a project in mind? Let's build something great together → **derbassimeriemz@gmail.com** 🌟
+I'm a Computer Science student at USTHB, Algiers, passionate about building modern web applications and creating digital solutions that combine technology, creativity, and functionality.
 
-</div>
+As a freelance developer, I aim to transform ideas into practical digital products through clean code, intuitive interfaces, and user-focused development. Beyond programming, I'm interested in artificial intelligence, UI/UX design, digital marketing, and entrepreneurship.
 
----
+I believe great digital products are built not only with code, but also with creativity, strategy, and a deep understanding of users.
 
-- 🎓 **Studying:** Computer Science student @ USTHB, Algiers
-- 🛠️ **Building:** Web projects that blend clean code with thoughtful UI/UX
-- 🤝 **Open to:** Tech & Marketing internships · Collabs · Open-source contributions
-  </div>
-- 💬 **Ask me about:** Web Dev · SEO · Digital Strategy · Community Building · Content Creation
-- 🌐 **Languages:** Arabic · English 🇬🇧 · French 🇫🇷 · Spanish (learning) 🇪🇸
-- ⚡ **My motto:** *Where code meets creativity that's where I live.*
-- 🏆 **Fun facts:** FULL Stack developer · Grew a community to **30K+ followers** in 2 months with **10M+ views** · Certified Digital Marketer
+🚀 What I Do
 
-## 🧩 Dev Highlights
+💻 Web Development: Building responsive and functional websites.
 
-<div align="center">
+🧩 Full-Stack Development: Exploring both frontend and backend technologies.
 
-| 🏅 Hackathon | 🔓 Open Source | 🧠 Problem Solving |
-|:---:|:---:|:---:|
-| Participated in **Pexelis Hackathon** ,built under pressure, shipped fast | Actively contributing to community-driven projects & clubs | Sharpening algorithmic thinking through competitive programming challenges & OOP 
+🎨 UI/UX Design: Creating intuitive and user-friendly interfaces.
 
-</div>
+🤖 Artificial Intelligence: Exploring intelligent applications and emerging technologies.
 
-
+📈 Digital Strategy: Combining technology, marketing, and product thinking.
 ## 🌐 Socials
 
 <div align="center">
