@@ -2,15 +2,15 @@
 
 # 👋 Hi
 
-💻 Freelance Full-Stack Developer | Computer Science Student | Digital Creator
+💻 Freelance Full-Stack Developer | Aspiring software engineer | Digital Creator
 
 I'm a Computer Science student at USTHB, Algiers, passionate about building modern web applications and creating digital solutions that combine technology, creativity, and functionality.
 
-As a freelance developer, I aim to transform ideas into practical digital products through clean code, intuitive interfaces, and user-focused development. Beyond programming, I'm interested in artificial intelligence, UI/UX design, digital marketing, and entrepreneurship.
+As a developer, I aim to transform ideas into practical digital products through clean code, intuitive interfaces, and user-focused development. Beyond programming, I'm interested in artificial intelligence, UI/UX design, digital marketing, and entrepreneurship.
 
 I believe great digital products are built not only with code, but also with creativity, strategy, and a deep understanding of users.
 
-🚀 What I Do
+# 🚀 What I Do
 
 💻 Web Development: Building responsive and functional websites.
 
@@ -21,6 +21,7 @@ I believe great digital products are built not only with code, but also with cre
 🤖 Artificial Intelligence: Exploring intelligent applications and emerging technologies.
 
 📈 Digital Strategy: Combining technology, marketing, and product thinking.
+
 ## 🌐 Socials
 
 <div align="center">
